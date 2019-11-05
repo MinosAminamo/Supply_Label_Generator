@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="387.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DeliveryFormController">
+   <children>
+      <Label prefHeight="49.0" prefWidth="375.0" text="Delivery Generator">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="32.0" prefWidth="458.0">
+         <children>
+            <Label text="Route:">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <TextField prefHeight="25.0" prefWidth="98.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="Currier:">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="comboBoxEmployee" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="458.0">
+         <children>
+            <Label text="Obs:">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <TextField prefHeight="25.0" prefWidth="305.0">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <ToolBar prefHeight="0.0" prefWidth="375.0">
+        <items>
+          <Button mnemonicParsing="false" text="Add CTe" />
+        </items>
+      </ToolBar>
+      <TableView prefHeight="234.0" prefWidth="479.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Origin" />
+          <TableColumn prefWidth="75.0" text="Cte" />
+            <TableColumn prefWidth="75.0" text="Quantity" />
+            <TableColumn prefWidth="75.0" />
+            <TableColumn prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
